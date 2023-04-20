@@ -1,0 +1,25 @@
+python main.py
+    --env [TASK NAME] : name of the MiniWoB++ task
+
+    --llm [LLM NAME] : name of the llm(chatgpt, davinci, ada, babbage, curie,
+                       davinci1, davinci2)
+
+    --num-episodes [NUM EPISODES] : episodes to run the task
+
+    --erci [NUM Explicit RCI] : loop for an action plan
+
+    --irci [NUM Implicit RCI] : loop for the agent grounding
+
+    --sgrounding : state grounding
+
+    --headless : environment will run in headless mode
+
+Examples :
+
+python3 main.py --env choose-list --llm davinci2 --num-episodes 1 --erci 1 --irci 1 --sgrounding
+python3 main.py --env click-button-sequence --llm davinci2 --num-episodes 1 --erci 1 --irci 1 --sgrounding
+python3 main.py --env click-checkboxes-large --llm davinci2 --num-episodes 1 --erci 1 --irci 1 --sgrounding
+python3 main.py --env social-media-some --llm davinci2 --num-episodes 1 --erci 1 --irci 1 --sgrounding
+python3 main.py --env login-user-popup --llm davinci2 --num-episodes 1 --erci 1 --irci 1 --sgrounding
+python3 main.py --env terminal --llm davinci2 --num-episodes 1 --erci 1 --irci 1 --sgrounding
+python3 main.py --env use-spinner --llm davinci2 --num-episodes 1 --erci 1 --irci 1 --sgrounding
